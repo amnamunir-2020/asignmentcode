@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DBSMModelStoreContainer" CdmEntityContainer="DBSMEntities">
+    <EntitySetMapping Name="managements">
+      <EntityTypeMapping TypeName="DBSMModel.management">
+        <MappingFragment StoreEntitySet="management">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="roomno" ColumnName="roomno" />
+          <ScalarProperty Name="products" ColumnName="products" />
+          <ScalarProperty Name="productmodel" ColumnName="productmodel" />
+          <ScalarProperty Name="available" ColumnName="available" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="patients">
+      <EntityTypeMapping TypeName="DBSMModel.patient">
+        <MappingFragment StoreEntitySet="patient">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="patientname" ColumnName="patientname" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="mobile" ColumnName="mobile" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
